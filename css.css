@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    border: 5px solid black;
+}
+
+nav ul {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    border: solid 2px green;
+}
+
+body {
+    background-image: url(./images/Background_image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    width: 2em;
+    height: auto;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+}
+
+main h1,h2,h3 {
+    padding: 0.5em;
+}
+
+main p {
+    padding-left: 1em;
+}
+
