@@ -4,26 +4,39 @@
 }
 
 header {
-    border: 5px solid black;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 375px;
 }
 
+header img {
+    width: 3em;
+    margin: 0.5em;
+    background-color: lightgray;
+    border-radius: 70%;
+}
+
+
+
 nav ul {
-    position: sticky;
     display: flex;
     justify-content: space-between;
     list-style: none;
-    border: solid 2px green;
+    margin-bottom: 10px;
+    border: solid 1px white;
+}
+
+nav ul li a {
+    opacity: 100%;
 }
 
 body {
     background-image: url(./images/Background_image.png);
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.logo {
-    width: 2em;
-    height: auto;
+    position: relative;
+    backdrop-filter: blur(5px);
 }
 
 main img {
@@ -39,3 +52,67 @@ main p {
     padding-left: 1em;
 }
 
+body section div {
+    background-color: white;
+    opacity: 60%;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+}
+
+body footer div {
+    background-image: linear-gradient(to bottom right, white, lightgray);
+    opacity: 60%;
+}
+
+body main section:nth-of-type(2) {
+    margin: 2em;
+    border-radius: 0.2em;
+    border: groove 5px;
+    border-color: rgb(39, 89, 47);
+    background-color: rgb(108, 140, 39);
+    color: white;
+}
+
+body main section:nth-of-type(2) ul {
+    list-style: none;
+
+}
+
+body main section:nth-of-type(2) ul li:nth-child(odd) {
+    background-color: rgb(90, 115, 38);
+}
+
+.events section:nth-of-type(1) {
+    margin: 0.5em;
+    background-color: rgb(108, 140, 39);
+    color: rgb(242, 242, 242);
+    border-radius: 0.2em;
+    border: groove 5px;
+    border-color: rgb(39, 89, 47);
+}
+
+.events section:nth-of-type(1) ul li:nth-child(odd) {
+    background-color: rgb(90, 115, 38);
+}
+
+.events p {
+    background-color: white;
+}
+
+figure img {
+    width: 50%;
+    height: auto;
+}
+
+figure {
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+section:nth-of-type(3) img {
+    border: blue solid 2px;
+    width: 80%;
+}
