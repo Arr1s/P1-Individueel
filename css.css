@@ -1,12 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    position: relative;
     width: 375px;
 }
 
@@ -21,7 +22,7 @@ header img {
 
 nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     list-style: none;
     margin-bottom: 10px;
     border: solid 1px white;
@@ -64,7 +65,7 @@ footer {
 
 body footer div {
     background-image: linear-gradient(to bottom right, white, lightgray);
-    opacity: 60%;
+    opacity: 80%;
 }
 
 body main section:nth-of-type(2) {
@@ -78,11 +79,14 @@ body main section:nth-of-type(2) {
 
 body main section:nth-of-type(2) ul {
     list-style: none;
-
 }
 
 body main section:nth-of-type(2) ul li:nth-child(odd) {
     background-color: rgb(90, 115, 38);
+}
+
+.Home {
+    position: absolute;
 }
 
 .events section:nth-of-type(1) {
@@ -112,7 +116,39 @@ figure {
     flex-flow: row-reverse;
 }
 
+section:nth-of-type(3) {
+    margin: 0;
+    padding: 0;
+}
+
 section:nth-of-type(3) img {
-    border: blue solid 2px;
-    width: 80%;
+    width: 90%;
+    margin-left: 5%;
+}
+
+main a {
+    border-radius: 10px;
+    border: white 2px solid;
+    background-color: lightgray;
+    padding: 0.2em 0.5em;
+    text-decoration: none;
+    font-style: italic;
+}
+
+
+
+footer nav ul figure {
+    display: flex;
+    flex-direction: column;
+}
+
+footer nav figure img {
+    width: 40%;
+    opacity: 100%;
+    align-self: center;
+}
+
+
+footer nav ul li {
+    text-align: center;
 }
