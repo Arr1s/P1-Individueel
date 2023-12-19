@@ -102,10 +102,6 @@ body main section:nth-of-type(2) ul li:nth-child(odd) {
     background-color: rgb(90, 115, 38);
 }
 
-.events p {
-    background-color: white;
-}
-
 figure img {
     width: 50%;
     height: auto;
